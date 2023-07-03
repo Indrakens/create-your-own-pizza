@@ -28,7 +28,42 @@ def get_user_choice():
         0].upper()
     print()
 
-    return choice            
+    return choice 
+
+
+def add_pizza(pizzas):
+    """
+    Get the user to choose and enter pizza size.
+    After entering size users can type toppings.
+    """
+    print("Please enter pizza size you would like to create.")
+    size = input("SIZES (S) (M) (L): ")[
+        0].upper()
+    print()
+    print("EXAMPLES...")
+    print("--cheese")
+    print("--pepperoni")
+    print("--mushrooms")
+    print("--onions")
+    print("--sausage")
+    print("--olives")
+    print("--peppers")
+    print("--pineapple")
+    print("--tomato")
+    print("--chicken")
+    print("--bacon")
+
+    toppings = []
+    while True:
+        topping = input(
+            "Please type a toppings of your choice, or type end to stop: ")
+
+        if topping == "end":
+            break
+        toppings.append(topping)
+
+    pizza = (size, toppings)
+    pizzas.append(pizza)               
 
 
 def program_end():
@@ -45,11 +80,16 @@ def main():
     header()
     name()
     program_end()
+    pizzas = []
 
     while True:
         choice = get_user_choice()
-        if choice == "Q":
+        if choice == "C":
+            add_pizza(pizzas)
+        elif choice == "Q":
             break
+        else:
+            print("Please enter a valid option!")
     
 
 main()
