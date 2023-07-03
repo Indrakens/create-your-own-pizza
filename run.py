@@ -19,6 +19,19 @@ def name():
             print("Invalid name, please try again!\n")
 
 
+def display_pizzas(pizzas):
+    """
+    Displays the size and toppings of the pizza.
+    """
+    if len(pizzas) == 0:
+        print("NO PIZZA CREATED YET!")
+    else:
+        index = 1
+        for pizza in pizzas:
+            print(f"{index}: {pizza[0]} pizza with {', '.join(pizza[1])}.")
+            index += 1            
+
+
 def get_user_choice():
     """
     Get the user to pick one of the options.
@@ -63,7 +76,10 @@ def add_pizza(pizzas):
         toppings.append(topping)
 
     pizza = (size, toppings)
-    pizzas.append(pizza)               
+    pizzas.append(pizza)
+
+    
+                   
 
 
 def program_end():
@@ -83,6 +99,7 @@ def main():
     pizzas = []
 
     while True:
+        display_pizzas(pizzas)
         choice = get_user_choice()
         if choice == "C":
             add_pizza(pizzas)
