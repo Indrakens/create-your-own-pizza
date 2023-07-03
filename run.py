@@ -29,7 +29,7 @@ def display_pizzas(pizzas):
         index = 1
         for pizza in pizzas:
             print(f"{index}: {pizza[0]} pizza with {', '.join(pizza[1])}.")
-            index += 1            
+            index += 1
 
 
 def get_user_choice():
@@ -41,7 +41,7 @@ def get_user_choice():
         0].upper()
     print()
 
-    return choice 
+    return choice
 
 
 def add_pizza(pizzas):
@@ -78,7 +78,7 @@ def add_pizza(pizzas):
     pizza = (size, toppings)
     pizzas.append(pizza)
 
-    
+
 def delete_pizza(pizzas):
     """
     Users can delete a pizza by entering the index number of the pizza created.
@@ -88,14 +88,22 @@ def delete_pizza(pizzas):
     if (index_to_delete > 0 and index_to_delete <= len(pizzas)):
         del pizzas[index_to_delete-1]
     else:
-        print("The pizza you entered does not exist.")                   
+        print("The pizza you entered does not exist.")
+
+
+def open_created_pizza(pizzas):
+    """
+    Displays what pizza is created by the user.
+    Or displays the text "NO PIZZA CREATED YET!"
+    """
+    print("---YOUR CREATED PIZZA---")
 
 
 def program_end():
     """
     End of the program.
     """
-    print("THANK YOU FOR USING PIZZA CREATOR!")                
+    print("THANK YOU FOR USING PIZZA CREATOR!")
 
 
 def main():
@@ -113,11 +121,13 @@ def main():
         if choice == "C":
             add_pizza(pizzas)
         elif choice == "D":
-            delete_pizza(pizzas)    
+            delete_pizza(pizzas)
+        elif choice == "O":
+            open_created_pizza(pizzas)
         elif choice == "Q":
             break
         else:
             print("Please enter a valid option!")
-    
+
 
 main()
