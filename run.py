@@ -16,7 +16,14 @@ def name():
             print("Hello," + name + "! Enjoy creating your own pizza!\n")
             return name
         else:
-            print("Invalid name, please try again!\n")    
+            print("Invalid name, please try again!\n")
+
+
+def program_end():
+    """
+    End of the program.
+    """
+    print("THANK YOU FOR USING PIZZA CREATOR!")                
 
 
 def main():
@@ -25,5 +32,7 @@ def main():
     """
     header()
     name()
+    program_end()
+
 
 main()
