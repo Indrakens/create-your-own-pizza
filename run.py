@@ -79,7 +79,16 @@ def add_pizza(pizzas):
     pizzas.append(pizza)
 
     
-                   
+def delete_pizza(pizzas):
+    """
+    Users can delete a pizza by entering the index number of the pizza created.
+    """
+    index_to_delete = int(
+        input("Please enter index number of pizza you'd like to delete: "))
+    if (index_to_delete > 0 and index_to_delete <= len(pizzas)):
+        del pizzas[index_to_delete-1]
+    else:
+        print("The pizza you entered does not exist.")                   
 
 
 def program_end():
@@ -103,6 +112,8 @@ def main():
         choice = get_user_choice()
         if choice == "C":
             add_pizza(pizzas)
+        elif choice == "D":
+            delete_pizza(pizzas)    
         elif choice == "Q":
             break
         else:
