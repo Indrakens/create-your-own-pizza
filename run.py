@@ -45,7 +45,11 @@ def main():
     header()
     name()
     program_end()
-    choice = get_user_choice()
 
+    while True:
+        choice = get_user_choice()
+        if choice == "Q":
+            break
+    
 
 main()
