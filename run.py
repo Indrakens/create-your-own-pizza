@@ -55,7 +55,7 @@ def add_pizza(pizzas):
     size = input("SIZES (S) (M) (L): ")[
         0].upper()
     print()
-    print("EXAMPLES...")
+    print("TOPPING EXAMPLES...")
     print("--cheese")
     print("--pepperoni")
     print("--mushrooms")
