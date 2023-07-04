@@ -2,8 +2,9 @@ def header():
     """
     Start of the program.
     """
+    print("--------------------------")
     print("WELCOME TO PIZZA-TIME!")
-    print("----------------------")
+    print("--------------------------")
     print("Create your own pizza!\n")
 
 
@@ -39,6 +40,7 @@ def get_user_choice():
     Get the user to pick one of the options.
     """
     print("Please choose one of the options!")
+    print("---------------------------------------------------")
     choice = input("(C)reate, (D)elete, (O)pen created pizza, (Q)uit: ")[
         0].upper()
     print("---------------------------------------------------")
