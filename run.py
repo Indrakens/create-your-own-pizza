@@ -28,6 +28,7 @@ def display_pizzas(pizzas):
     """
     if len(pizzas) == 0:
         print("NO PIZZA CREATED YET!")
+        print("---------------------")
     else:
         index = 1
         for pizza in pizzas:
@@ -44,6 +45,7 @@ def get_user_choice():
     choice = input("(C)reate, (D)elete, (O)pen created pizza, (Q)uit: ")[
         0].upper()
     print("---------------------------------------------------")
+    print()
 
     return choice
 
