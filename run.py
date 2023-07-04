@@ -2,7 +2,9 @@ def header():
     """
     Start of the program.
     """
-    print("WELCOME TO CREATE YOUR OWN PIZZA!\n")
+    print("WELCOME TO PIZZA-TIME!")
+    print("----------------------")
+    print("Create your own pizza!\n")
 
 
 def name():
@@ -39,7 +41,7 @@ def get_user_choice():
     print("Please choose one of the options!")
     choice = input("(C)reate, (D)elete, (O)pen created pizza, (Q)uit: ")[
         0].upper()
-    print()
+    print("---------------------------------------------------")
 
     return choice
 
@@ -103,7 +105,7 @@ def program_end():
     """
     End of the program.
     """
-    print("THANK YOU FOR USING PIZZA CREATOR!")
+    print("THANK YOU FOR USING PIZZA-TIME!")
 
 
 def main():
@@ -112,7 +114,6 @@ def main():
     """
     header()
     name()
-    program_end()
     pizzas = []
 
     while True:
@@ -128,6 +129,8 @@ def main():
             break
         else:
             print("Please enter a valid option!")
+
+    program_end()
 
 
 main()
