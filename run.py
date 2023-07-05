@@ -60,17 +60,12 @@ def add_pizza(pizzas):
         0].upper()
     print()
     print("TOPPING EXAMPLES...")
-    print("--cheese")
-    print("--pepperoni")
-    print("--mushrooms")
-    print("--onions")
-    print("--sausage")
-    print("--olives")
-    print("--peppers")
-    print("--pineapple")
-    print("--tomato")
-    print("--chicken")
-    print("--bacon")
+    examples = ["-cheese", "-pepperoni", "-mushrooms", "-onion", "-sausage",
+                "-olives", "-peppers", "-pineapple", "-chicken", "-tomato", "-bacon"]
+    for example in examples:
+        print(example, end="")
+        print("\b\b", end="")
+        print("")
 
     toppings = []
     while True:
