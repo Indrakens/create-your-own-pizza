@@ -148,7 +148,7 @@ def main():
         elif choice == "Q":
             break
         else:
-            print("Please enter a valid option!")
+            print(simple_colors.red("Please enter a valid option!", 'italic'))
 
     program_end()
 
