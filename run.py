@@ -1,25 +1,35 @@
+import simple_colors
+
+
 def program_start():
     """
     Start of the program.
     """
-    print("--------------------------")
-    print("WELCOME TO PIZZA-TIME!")
-    print("--------------------------")
-    print("Create your own pizza!\n")
+    print(simple_colors.red(
+        "-----------------------------------------", ['bright', 'bold']))
+    print(simple_colors.red(
+        "        WELCOME TO PIZZA-TIME!         ", ['bold', 'bright']))
+    print(simple_colors.red("        Create your own pizza.      ", 'bright'))
+    print(simple_colors.red(
+        "-----------------------------------------", ['bright', 'bold']))
 
 
 def get_ueser_name():
     """
     Get the name of the user.
     """
-    print("Please enter your name before continuing.")
+    print(simple_colors.yellow(
+        "Please enter your name before continuing.", 'italic'))
     while True:
-        name = input("ENTER YOUR NAME: ")
+        name = input(simple_colors.green(
+            "ENTER YOUR NAME: ", ['bold', 'italic']))
         if name.isalpha():
-            print("Hello," + name + "! Enjoy creating your own pizza!\n")
+            print(simple_colors.yellow("Hello," + name +
+                  "! Enjoy creating your own pizza!\n", 'italic'))
             return name
         else:
-            print("Invalid name, please try again!\n")
+            print(simple_colors.red(
+                "Invalid name, please try again!\n", 'italic'))
 
 
 def display_pizzas(pizzas):
@@ -27,8 +37,7 @@ def display_pizzas(pizzas):
     Displays the size and toppings of the pizza.
     """
     if len(pizzas) == 0:
-        print("NO PIZZA CREATED YET!")
-        print("---------------------")
+        print(simple_colors.red("No pizza created yet!", 'italic'))
     else:
         index = 1
         for pizza in pizzas:
@@ -40,12 +49,10 @@ def get_user_choice():
     """
     Get the user to pick one of the options.
     """
-    print("Please choose one of the options!")
-    print("---------------------------------------------------")
-    choice = input(
-        "(C)reate, (D)elete, (O)pen created pizza, (Q)uit: ").upper()
-    print("---------------------------------------------------")
-    print()
+    print(simple_colors.yellow("Please choose one of the options!", 'italic'))
+    choice = input(simple_colors.green(
+        "(C)reate, (D)elete, (O)pen created pizza, (Q)uit: ",
+        ['bright', 'bold', 'italic'])).upper()
 
     return choice
 
@@ -55,17 +62,19 @@ def add_pizza(pizzas):
     Get the user to choose and enter pizza size.
     After entering size users can type toppings.
     """
-    print("Please enter pizza size you would like to create.")
+    print(simple_colors.yellow(
+        "Please enter pizza size you would like to create.", 'italic'))
     while True:
-        size = input("(S) (M) (L): ").upper()
+        size = input(simple_colors.green(
+            "(S) (M) (L): ", ['bright', 'bold'])).upper()
         if size.upper() not in ("S", "M", "L"):
-            print("Please enter valid option!\n")
+            print(simple_colors.red("Please enter valid option!\n", 'italic'))
         else:
             break
 
-    print("TOPPING EXAMPLES...")
+    print(simple_colors.green("TOPPING EXAMPLES...", 'italic'))
     examples = ["-cheese", "-pepperoni", "-mushrooms", "-onion", "-sausage",
-                "-olives", "-peppers", "-pineapple", "-chicken", "-tomato", "-bacon"]
+                "-olives", "-peppers", "-pineapple", "-chicken", "-bacon"]
     for example in examples:
         print(example, end="")
         print("\b\b", end="")
@@ -73,8 +82,8 @@ def add_pizza(pizzas):
 
     toppings = []
     while True:
-        topping = input(
-            "Please type a toppings of your choice, or type end to stop: ")
+        topping = input(simple_colors.yellow(
+            "Please type a toppings or type end to stop: ", 'italic'))
 
         if topping == "end":
             break
@@ -89,11 +98,13 @@ def delete_pizza(pizzas):
     Users can delete a pizza by entering the index number of the pizza created.
     """
     index_to_delete = int(
-        input("Please enter index number of pizza you'd like to delete: "))
+        input(simple_colors.yellow(
+            "Enter index number of pizza you'd like to delete: ", 'italic')))
     if (index_to_delete > 0 and index_to_delete <= len(pizzas)):
         del pizzas[index_to_delete-1]
     else:
-        print("The pizza you entered does not exist.")
+        print(simple_colors.red(
+            "The pizza you entered does not exist.", 'italic'))
 
 
 def open_created_pizza(pizzas):
@@ -101,14 +112,20 @@ def open_created_pizza(pizzas):
     Displays what pizza is created by the user.
     Or displays the text "NO PIZZA CREATED YET!"
     """
-    print("---YOUR CREATED PIZZA---")
+    print(simple_colors.magenta(
+        "---YOUR CREATED PIZZA---", ['bright', 'italic']))
 
 
 def program_end():
     """
     End of the program.
     """
-    print("THANK YOU FOR USING PIZZA-TIME!")
+    print(simple_colors.red(
+        "----------------------------------------------", ['bright', 'bold']))
+    print(simple_colors.red(
+        "       THANK YOU FOR USING PIZZA-TIME!", ['bright', 'bold']))
+    print(simple_colors.red(
+        "       -------------------------------         ", ['bright', 'bold']))
 
 
 def main():
