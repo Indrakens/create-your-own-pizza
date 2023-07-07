@@ -5,12 +5,12 @@ def program_start():
     """
     Start of the program.
     """
-    print(red(
+    print(yellow(
         "-----------------------------------------", ['bright', 'bold']))
-    print(red(
+    print(yellow(
         "        WELCOME TO PIZZA-TIME!         ", ['bold', 'bright']))
-    print(red("        Create your own pizza.      ", 'bright'))
-    print(red(
+    print(yellow("        Create your own pizza.      ", 'bright'))
+    print(yellow(
         "-----------------------------------------", ['bright', 'bold']))
 
 
@@ -21,7 +21,7 @@ def get_ueser_name():
     print(yellow(
         "Please enter your name before continuing.", ['italic', 'bright']))
     while True:
-        name = input(blue(
+        name = input(cyan(
             "ENTER YOUR NAME:\n", ['bold', 'italic']))
         if name.isalpha():
             print(yellow("Hello," + name +
@@ -50,9 +50,9 @@ def get_user_choice():
     Get the user to pick one of the options.
     """
     print(yellow("Please choose one of the options!", ['italic', 'bright']))
-    choice = input(blue(
+    choice = input(cyan(
         "(C)reate, (D)elete, (O)pen created pizza, (Q)uit:\n",
-        ['bright', 'bold', 'italic'])).upper()
+        ['bold', 'italic'])).upper()
 
     return choice
 
@@ -65,14 +65,14 @@ def add_pizza(pizzas):
     print(yellow(
         "Please enter pizza size you would like to create.", ['italic', 'bright']))
     while True:
-        size = input(blue(
-            "(S) (M) (L):\n", ['bright', 'bold'])).upper()
+        size = input(cyan(
+            "(S) (M) (L):\n", ['italic', 'bold'])).upper()
         if size.upper() not in ("S", "M", "L"):
             print(red("Please enter valid option!\n", ['italic', 'bright']))
         else:
             break
 
-    print(blue("TOPPING EXAMPLES...", ['italic', 'bright']))
+    print(cyan("TOPPING EXAMPLES...", 'italic'))
     examples = ["-cheese", "-pepperoni", "-mushrooms", "-onion", "-sausage",
                 "-olives", "-peppers", "-pineapple", "-chicken", "-bacon"]
     for example in examples:
@@ -112,20 +112,18 @@ def open_created_pizza(pizzas):
     Displays what pizza is created by the user.
     Or displays the text "NO PIZZA CREATED YET!"
     """
-    print(blue(
-        "---YOUR CREATED PIZZA---", ['bright', 'italic']))
+    print(cyan(
+        "---YOUR CREATED PIZZA---", 'italic'))
 
 
 def program_end():
     """
     End of the program.
     """
-    print(red(
+    print(yellow(
         "----------------------------------------------", ['bright', 'bold']))
-    print(red(
+    print(yellow(
         "       THANK YOU FOR USING PIZZA-TIME!", ['bright', 'bold']))
-    print(red(
-        "       -------------------------------         ", ['bright', 'bold']))
 
 
 def main():
