@@ -1,4 +1,4 @@
-def header():
+def program_start():
     """
     Start of the program.
     """
@@ -8,7 +8,7 @@ def header():
     print("Create your own pizza!\n")
 
 
-def name():
+def get_ueser_name():
     """
     Get the name of the user.
     """
@@ -42,8 +42,8 @@ def get_user_choice():
     """
     print("Please choose one of the options!")
     print("---------------------------------------------------")
-    choice = input("(C)reate, (D)elete, (O)pen created pizza, (Q)uit: ")[
-        0].upper()
+    choice = input(
+        "(C)reate, (D)elete, (O)pen created pizza, (Q)uit: ").upper()
     print("---------------------------------------------------")
     print()
 
@@ -56,9 +56,13 @@ def add_pizza(pizzas):
     After entering size users can type toppings.
     """
     print("Please enter pizza size you would like to create.")
-    size = input("SIZES (S) (M) (L): ")[
-        0].upper()
-    print()
+    while True:
+        size = input("(S) (M) (L): ").upper()
+        if size.upper() not in ("S", "M", "L"):
+            print("Please enter valid option!\n")
+        else:
+            break
+
     print("TOPPING EXAMPLES...")
     examples = ["-cheese", "-pepperoni", "-mushrooms", "-onion", "-sausage",
                 "-olives", "-peppers", "-pineapple", "-chicken", "-tomato", "-bacon"]
@@ -111,8 +115,8 @@ def main():
     """
     Runs all functions.
     """
-    header()
-    name()
+    program_start()
+    get_ueser_name()
     pizzas = []
 
     while True:
