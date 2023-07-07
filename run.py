@@ -19,13 +19,13 @@ def get_ueser_name():
     Get the name of the user.
     """
     print(yellow(
-        "Please enter your name before continuing.", 'italic'))
+        "Please enter your name before continuing.", ['italic', 'bright']))
     while True:
         name = input(blue(
             "ENTER YOUR NAME:\n", ['bold', 'italic']))
         if name.isalpha():
             print(yellow("Hello," + name +
-                  "! Enjoy creating your own pizza!\n", 'italic'))
+                  "! Enjoy creating your own pizza!\n", ['italic', 'bright']))
             return name
         else:
             print(red(
@@ -49,7 +49,7 @@ def get_user_choice():
     """
     Get the user to pick one of the options.
     """
-    print(yellow("Please choose one of the options!", 'italic'))
+    print(yellow("Please choose one of the options!", ['italic', 'bright']))
     choice = input(blue(
         "(C)reate, (D)elete, (O)pen created pizza, (Q)uit:\n",
         ['bright', 'bold', 'italic'])).upper()
@@ -63,7 +63,7 @@ def add_pizza(pizzas):
     After entering size users can type toppings.
     """
     print(yellow(
-        "Please enter pizza size you would like to create.", 'italic'))
+        "Please enter pizza size you would like to create.", ['italic', 'bright']))
     while True:
         size = input(blue(
             "(S) (M) (L):\n", ['bright', 'bold'])).upper()
@@ -72,7 +72,7 @@ def add_pizza(pizzas):
         else:
             break
 
-    print(blue("TOPPING EXAMPLES...", 'italic'))
+    print(blue("TOPPING EXAMPLES...", ['italic', 'bright']))
     examples = ["-cheese", "-pepperoni", "-mushrooms", "-onion", "-sausage",
                 "-olives", "-peppers", "-pineapple", "-chicken", "-bacon"]
     for example in examples:
@@ -83,7 +83,7 @@ def add_pizza(pizzas):
     toppings = []
     while True:
         topping = input(yellow(
-            "Please type a toppings or type (e)nd to stop:\n", 'italic'))
+            "Please type a toppings or type (e)nd to stop:\n", ['italic', 'bright']))
 
         if topping == "e":
             break
@@ -99,7 +99,7 @@ def delete_pizza(pizzas):
     """
     index_to_delete = int(
         input(yellow(
-            "Enter index number of pizza you'd like to delete: ", 'italic')))
+            "Enter index number of pizza you'd like to delete: ", ['italic', 'bright'])))
     if (index_to_delete > 0 and index_to_delete <= len(pizzas)):
         del pizzas[index_to_delete-1]
     else:
