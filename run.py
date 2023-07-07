@@ -21,7 +21,7 @@ def get_ueser_name():
     print(yellow(
         "Please enter your name before continuing.", 'italic'))
     while True:
-        name = input(green(
+        name = input(blue(
             "ENTER YOUR NAME:\n", ['bold', 'italic']))
         if name.isalpha():
             print(yellow("Hello," + name +
@@ -29,7 +29,7 @@ def get_ueser_name():
             return name
         else:
             print(red(
-                "Invalid name, please try again!\n", 'italic'))
+                "Invalid name, please try again!\n", ['italic', 'bright']))
 
 
 def display_pizzas(pizzas):
@@ -37,7 +37,7 @@ def display_pizzas(pizzas):
     Displays the size and toppings of the pizza.
     """
     if len(pizzas) == 0:
-        print(red("No pizza created yet!", 'italic'))
+        print(red("No pizza created yet!", ['italic', 'bright']))
     else:
         index = 1
         for pizza in pizzas:
@@ -50,7 +50,7 @@ def get_user_choice():
     Get the user to pick one of the options.
     """
     print(yellow("Please choose one of the options!", 'italic'))
-    choice = input(green(
+    choice = input(blue(
         "(C)reate, (D)elete, (O)pen created pizza, (Q)uit:\n",
         ['bright', 'bold', 'italic'])).upper()
 
@@ -65,14 +65,14 @@ def add_pizza(pizzas):
     print(yellow(
         "Please enter pizza size you would like to create.", 'italic'))
     while True:
-        size = input(green(
+        size = input(blue(
             "(S) (M) (L):\n", ['bright', 'bold'])).upper()
         if size.upper() not in ("S", "M", "L"):
-            print(red("Please enter valid option!\n", 'italic'))
+            print(red("Please enter valid option!\n", ['italic', 'bright']))
         else:
             break
 
-    print(green("TOPPING EXAMPLES...", 'italic'))
+    print(blue("TOPPING EXAMPLES...", 'italic'))
     examples = ["-cheese", "-pepperoni", "-mushrooms", "-onion", "-sausage",
                 "-olives", "-peppers", "-pineapple", "-chicken", "-bacon"]
     for example in examples:
@@ -104,7 +104,7 @@ def delete_pizza(pizzas):
         del pizzas[index_to_delete-1]
     else:
         print(red(
-            "The pizza you entered does not exist.", 'italic'))
+            "The pizza you entered does not exist.", ['italic', 'bright']))
 
 
 def open_created_pizza(pizzas):
@@ -112,7 +112,7 @@ def open_created_pizza(pizzas):
     Displays what pizza is created by the user.
     Or displays the text "NO PIZZA CREATED YET!"
     """
-    print(magenta(
+    print(blue(
         "---YOUR CREATED PIZZA---", ['bright', 'italic']))
 
 
@@ -148,7 +148,7 @@ def main():
         elif choice == "Q":
             break
         else:
-            print(red("Please enter a valid option!", 'italic'))
+            print(red("Please enter a valid option!", ['italic', 'bright']))
 
     program_end()
 
