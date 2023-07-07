@@ -83,7 +83,7 @@ def add_pizza(pizzas):
     toppings = []
     while True:
         topping = input(yellow(
-            "Please type a toppings or type (e)nd to stop:\n", ['italic', 'bright']))
+            "Please type a toppings or type (e) to stop:\n", ['italic', 'bright']))
 
         if topping == "e":
             break
