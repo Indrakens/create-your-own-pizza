@@ -22,7 +22,7 @@ def get_ueser_name():
         "Please enter your name before continuing.", 'italic'))
     while True:
         name = input(simple_colors.green(
-            "ENTER YOUR NAME: ", ['bold', 'italic']))
+            "ENTER YOUR NAME:\n", ['bold', 'italic']))
         if name.isalpha():
             print(simple_colors.yellow("Hello," + name +
                   "! Enjoy creating your own pizza!\n", 'italic'))
@@ -51,7 +51,7 @@ def get_user_choice():
     """
     print(simple_colors.yellow("Please choose one of the options!", 'italic'))
     choice = input(simple_colors.green(
-        "(C)reate, (D)elete, (O)pen created pizza, (Q)uit: ",
+        "(C)reate, (D)elete, (O)pen created pizza, (Q)uit:\n",
         ['bright', 'bold', 'italic'])).upper()
 
     return choice
@@ -66,7 +66,7 @@ def add_pizza(pizzas):
         "Please enter pizza size you would like to create.", 'italic'))
     while True:
         size = input(simple_colors.green(
-            "(S) (M) (L): ", ['bright', 'bold'])).upper()
+            "(S) (M) (L):\n", ['bright', 'bold'])).upper()
         if size.upper() not in ("S", "M", "L"):
             print(simple_colors.red("Please enter valid option!\n", 'italic'))
         else:
@@ -83,9 +83,9 @@ def add_pizza(pizzas):
     toppings = []
     while True:
         topping = input(simple_colors.yellow(
-            "Please type a toppings or type end to stop: ", 'italic'))
+            "Please type a toppings or type (e)nd to stop:\n", 'italic'))
 
-        if topping == "end":
+        if topping == "e":
             break
         toppings.append(topping)
 
