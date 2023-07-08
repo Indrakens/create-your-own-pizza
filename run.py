@@ -72,7 +72,7 @@ def add_pizza(pizzas):
         else:
             break
 
-    print(cyan("TOPPING EXAMPLES...", 'italic'))
+    print(cyan("TOPPING EXAMPLES...", ['italic', 'bright']))
     examples = ["-cheese", "-pepperoni", "-mushrooms", "-onion", "-sausage",
                 "-olives", "-peppers", "-pineapple", "-chicken", "-bacon"]
     for example in examples:
@@ -120,8 +120,8 @@ def open_created_pizza(pizzas):
     Displays what pizza is created by the user.
     Or displays the text "NO PIZZA CREATED YET!"
     """
-    print(cyan(
-        "---YOUR CREATED PIZZA---", 'italic'))
+    print(yellow(
+        "---YOUR CREATED PIZZA---", ['italic', 'bright']))
 
 
 def program_end():
