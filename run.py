@@ -63,7 +63,7 @@ def add_pizza(pizzas):
     After entering size users can type toppings.
     """
     print(yellow(
-        "Please enter pizza size you would like to create.", ['italic', 'bright']))
+        "Please enter pizza size.", ['italic', 'bright']))
     while True:
         size = input(cyan(
             "(S) (M) (L):\n", ['italic', 'bold'])).upper()
@@ -83,10 +83,11 @@ def add_pizza(pizzas):
     toppings = []
     while True:
         topping = input(yellow(
-            "Please type a toppings or type (e) to stop:\n", ['italic', 'bright']))
+            "Please type a toppings or (e) to stop:\n", ['italic', 'bright']))
 
         if topping == "e":
             break
+
         toppings.append(topping)
 
     pizza = (size, toppings)
@@ -101,13 +102,13 @@ def delete_pizza(pizzas):
         try:
             index_to_delete = int(
                 input(yellow(
-                    "Enter index number of pizza you'd like to delete: ", ['italic', 'bright'])))
+                    "Enter pizza number to delete: ", ['italic', 'bright'])))
 
             if (index_to_delete > 0 and index_to_delete <= len(pizzas)):
                 del pizzas[index_to_delete-1]
             else:
                 print(red(
-                    "The pizza you entered does not exist.", ['italic', 'bright']))
+                    "Entered pizza don't exist.", ['italic', 'bright']))
 
         except ValueError:
             print(red("Invalid number!", ['italic', 'bright']))
