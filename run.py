@@ -111,7 +111,7 @@ def delete_pizza(pizzas):
                     "Entered pizza don't exist.", ['italic', 'bright']))
 
         except ValueError:
-            print(red("Invalid number!", ['italic', 'bright']))
+            print(red("Invalid number!\n", ['italic', 'bright']))
         break
 
 
