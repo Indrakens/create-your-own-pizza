@@ -97,14 +97,21 @@ def delete_pizza(pizzas):
     """
     Users can delete a pizza by entering the index number of the pizza created.
     """
-    index_to_delete = int(
-        input(yellow(
-            "Enter index number of pizza you'd like to delete: ", ['italic', 'bright'])))
-    if (index_to_delete > 0 and index_to_delete <= len(pizzas)):
-        del pizzas[index_to_delete-1]
-    else:
-        print(red(
-            "The pizza you entered does not exist.", ['italic', 'bright']))
+    while True:
+        try:
+            index_to_delete = int(
+                input(yellow(
+                    "Enter index number of pizza you'd like to delete: ", ['italic', 'bright'])))
+
+            if (index_to_delete > 0 and index_to_delete <= len(pizzas)):
+                del pizzas[index_to_delete-1]
+            else:
+                print(red(
+                    "The pizza you entered does not exist.", ['italic', 'bright']))
+
+        except ValueError:
+            print(red("Invalid number!", ['italic', 'bright']))
+        break
 
 
 def open_created_pizza(pizzas):
