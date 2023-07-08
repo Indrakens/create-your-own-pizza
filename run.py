@@ -29,7 +29,7 @@ def get_ueser_name():
             return name
         else:
             print(red(
-                "Invalid name, please try again!\n", ['italic', 'bright']))
+                "Invalid name, please try again!", ['italic', 'bright']))
 
 
 def display_pizzas(pizzas):
@@ -68,7 +68,7 @@ def add_pizza(pizzas):
         size = input(cyan(
             "(S) (M) (L):\n", ['italic', 'bold'])).upper()
         if size.upper() not in ("S", "M", "L"):
-            print(red("Please enter valid option!\n", ['italic', 'bright']))
+            print(red("Please enter valid option!", ['italic', 'bright']))
         else:
             break
 
@@ -108,7 +108,7 @@ def delete_pizza(pizzas):
                 del pizzas[index_to_delete-1]
             else:
                 print(red(
-                    "Entered pizza don't exist.", ['italic', 'bright']))
+                    "Entered pizza doesn't exist.", ['italic', 'bright']))
 
         except ValueError:
             print(red("Invalid number!\n", ['italic', 'bright']))
