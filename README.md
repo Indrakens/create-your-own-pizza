@@ -61,4 +61,24 @@ The following tests are on error handling true out the project.
 | The user enters the pizza number to delete when pizza is not created, an error message appears           |  PASS  |
 | The user enters to delete pizza emty string or the pizza number what doesn't exist, error message appears|  PASS  |
 # PEP8 CI Python Linter
-![487C80A2-215B-484E-8F5E-31D52ABF63D8](https://github.com/Indrakens/pizza-time/assets/127971416/3df4a253-a45b-4014-a242-02f7793892bf)
+![9EAA5702-F173-4096-AE3F-E6737C43562B](https://github.com/Indrakens/pizza-time/assets/127971416/76e925d8-b06d-42dd-a33e-c82e29412f66)
+# DEPLOYMENT
+* Navigate to heroku.com and log in.
+* Click "new" and create a new App.
+* Give the application a name and then choose your region and Click "Create app".
+* After you create App click on Settings to adjust the settings.
+* Click on the "Config Vars" button.
+* Supply a KEY of PORT and it's VALUE of 8000. Then click on the "add" button.
+* If you have creds.jason file in your project.
+* Supply a KEY of CREDS and its VALUE of copied entire creds. jason file.
+* Click on Buildpack to install future dependencies that we need outside of the requirements file.
+* Select Python first and save.
+* Select nodejs and save.
+* After Settings go to the Deploy section.
+* To connect with github select github and confirm.
+* Search for your repository, type your repository name, select it, and click to connect.
+* You can choose to either deploy using automatic deploys which means Heroku will rebuild the app every time you push your changes.
+* For this option choose the branch to deploy and click enable automatic deploys.
+* Manual deployment deploys the current state of a branch. 
+* Click to deploy branch.
+* Now you can click on the open App button to view our application.
