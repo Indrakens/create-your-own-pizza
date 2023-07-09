@@ -74,7 +74,7 @@ def add_pizza(pizzas):
 
     print(cyan("TOPPING EXAMPLES...", ['italic', 'bright']))
     examples = ["-cheese", "-pepperoni", "-mushrooms", "-onion", "-sausage",
-                "-olives", "-peppers", "-pineapple", "-chicken", "-bacon"]
+                "-olives", "-peppers", "-pineapple", "-chicken", "-bacon", "-tomato", "-chilli"]
     for example in examples:
         print(example, end="")
         print("\b\b", end="")
@@ -83,8 +83,10 @@ def add_pizza(pizzas):
     toppings = []
     while True:
         topping = input(yellow(
-            "Please type a toppings or (e) to stop:\n", ['italic', 'bright']))
-
+            "Please type a toppings or (e) to stop:", ['italic', 'bright']))
+        if example != examples:
+            print(red("Please ener valid topping!\n", ['italic', 'bright']))
+            return topping
         if topping == "e":
             break
 
