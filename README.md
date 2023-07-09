@@ -60,3 +60,5 @@ The following tests are on error handling true out the project.
 | The user selecting O option first without creating pizza, an error message appears                       |  PASS  |
 | The user enters the pizza number to delete when pizza is not created, an error message appears           |  PASS  |
 | The user enters to delete pizza emty string or the pizza number what doesn't exist, error message appears|  PASS  |
+# PEP8 CI Python Linter
+![487C80A2-215B-484E-8F5E-31D52ABF63D8](https://github.com/Indrakens/pizza-time/assets/127971416/3df4a253-a45b-4014-a242-02f7793892bf)
