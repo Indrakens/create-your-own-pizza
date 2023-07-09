@@ -1,4 +1,10 @@
 # PIZZA - TIME
+A Python command line program. This application is a Python-based program to let users use their imagination and create their own pizza.
+## THE LIVE SITE
+## REPOSITORY
+# CONTENT TABLE
+# FLOWCHART
+|![Pizza-Time](https://github.com/Indrakens/pizza-time/assets/127971416/070fb8d2-48c4-4ce9-838c-9ef056d3d1cf)|
 # TEHNOLOGY USED
 ## Python
 Used to create the application.
