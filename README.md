@@ -4,7 +4,23 @@ A Python command line program. This application is a Python-based program to let
 ## REPOSITORY
 # CONTENT TABLE
 # FLOWCHART
-|![Pizza-Time](https://github.com/Indrakens/pizza-time/assets/127971416/070fb8d2-48c4-4ce9-838c-9ef056d3d1cf)|
+To better understand the initial design and concept of the program.
+![Pizza-Time](https://github.com/Indrakens/pizza-time/assets/127971416/070fb8d2-48c4-4ce9-838c-9ef056d3d1cf)
+# RUNNING PROGRAM
+When users open the program they are presented with a welcome message and name input.
+![3D793E15-E72F-415D-A73A-248C57ECC67B](https://github.com/Indrakens/pizza-time/assets/127971416/7e2ab970-21e1-4697-8d64-d6f2fe534198)
+The user is presented with a welcome message and menu options.
+![74C75FC9-D950-4356-AF21-9E2B3AF3D12A](https://github.com/Indrakens/pizza-time/assets/127971416/c9b5c3b4-4bbb-4650-a0f8-b3484c7bc1ce)
+When selecting C the user is presented with pizza size option.
+![0ACDEEBB-0EA2-480C-AE3A-A25DE0807171](https://github.com/Indrakens/pizza-time/assets/127971416/eb882299-00aa-4721-a4b1-3c7816eaad7e)
+When selecting pizza size the user is presented with topping examples and has given option to type toppings or type e to stop a program.
+![2B1BC813-E273-441C-B58F-859BB15BDAD8](https://github.com/Indrakens/pizza-time/assets/127971416/5480c279-a92c-4fe5-a624-cb36e5c2b1d5)
+When selecting O the user is presented with message Your Created Pizza and below will be able to see user created pizza.
+![EADE79DC-8275-4C17-956A-E82CB7C8BE01](https://github.com/Indrakens/pizza-time/assets/127971416/d2790e98-92ed-445e-8d67-5d11ac07900e)
+When selecting D the user is presented with message to enter the pizza number user would like to delete.
+![6A6FE4A3-F8DA-49EE-B7A1-E847B999E85F](https://github.com/Indrakens/pizza-time/assets/127971416/bb1bbe02-255e-4e0d-a63d-0347d0193053)
+Selecting Q to end the program the user will be presented with thank you message.
+![0768D94B-88DA-4C28-8A5C-D4DFE8C48A3B](https://github.com/Indrakens/pizza-time/assets/127971416/f6d8742a-6b1b-45c8-9b19-5d93b06c3b4b)
 # TEHNOLOGY USED
 ## Python
 Used to create the application.
