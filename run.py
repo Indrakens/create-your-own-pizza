@@ -86,7 +86,13 @@ def add_pizza(pizzas):
         topping = input(yellow(
             "Please type a toppings or (e) to stop: ", ['italic', 'bright']))
 
-        if topping == "e":
+        if topping.lower() not in ("cheese", "mushrooms", "pineapple",
+                                   "tomato", "chicken", "olives", "onion",
+                                   "chilli", "bacon", "peppers",
+                                   "sausage", "pepperoni", "e"):
+            print(red("Please enter valid option!", ['italic', 'bright']))
+            break
+        elif topping == "e":
             break
 
         toppings.append(topping)
