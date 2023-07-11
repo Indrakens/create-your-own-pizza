@@ -3,10 +3,10 @@ A Python command line program. This application is a Python-based program to let
 ## THE LIVE SITE
 ## REPOSITORY
 # CONTENT TABLE
-# FLOWCHART
+## FLOWCHART
 To better understand the initial design and concept of the program.
 ![Pizza-Time](https://github.com/Indrakens/pizza-time/assets/127971416/070fb8d2-48c4-4ce9-838c-9ef056d3d1cf)
-# RUNNING PROGRAM
+## RUNNING PROGRAM
 When users open the program they are presented with a welcome message and name input.
 ![3D793E15-E72F-415D-A73A-248C57ECC67B](https://github.com/Indrakens/pizza-time/assets/127971416/7e2ab970-21e1-4697-8d64-d6f2fe534198)
 The user is presented with a welcome message and menu options.
@@ -21,19 +21,19 @@ When selecting D the user is presented with message to enter the pizza number us
 ![6A6FE4A3-F8DA-49EE-B7A1-E847B999E85F](https://github.com/Indrakens/pizza-time/assets/127971416/bb1bbe02-255e-4e0d-a63d-0347d0193053)
 Selecting Q to end the program the user will be presented with thank you message.
 ![0768D94B-88DA-4C28-8A5C-D4DFE8C48A3B](https://github.com/Indrakens/pizza-time/assets/127971416/f6d8742a-6b1b-45c8-9b19-5d93b06c3b4b)
-# TEHNOLOGY USED
-## Python
+## TEHNOLOGY USED
+### Python
 Used to create the application.
-## Heroku
+### Heroku
 Used to deploy and host the application.
-## Github
+### Github
 Used to store the code.
-## Gitpod
+### Gitpod
 IDE used to creating the application.
-## Git
+### Git
 Used for version control.
-# TESTING
-## Testing Steps:
+## TESTING
+### Testing Steps:
 |                    TEST                                                              | RESULT |
 |---------|-----------|
 | On the run program the welcome message appears                                       |  PASS  |
@@ -88,9 +88,14 @@ Deleting pizza in Enter pizza number to delete Field.
 | The user enters an empty string  |  PASS  |
 | The user enters the wrong number |  PASS  |   
 #### The users can only enter the pizza number they would like to delete. If pizza is not created yet they will see an error message "Entered pizza doesn't exist!".
+Opening pizza in "Your Created Piza!" Field.
+|     TEST                              | RESULT |
+|------|------|
+| The user hasn't yet created any pizza |  PASS  |
+#### The user can see created pizza only if the pizza has been created.
 # PEP8 CI Python Linter
 ![9EAA5702-F173-4096-AE3F-E6737C43562B](https://github.com/Indrakens/pizza-time/assets/127971416/76e925d8-b06d-42dd-a33e-c82e29412f66)
-# DEPLOYMENT
+## DEPLOYMENT
 * Navigate to heroku.com and log in.
 * Click "new" and create a new App.
 * Give the application a name and then choose your region and Click "Create app".
@@ -110,3 +115,9 @@ Deleting pizza in Enter pizza number to delete Field.
 * Manual deployment deploys the current state of a branch. 
 * Click to deploy branch.
 * Now you can click on the open App button to view our application.
+## CREDITS
+* For having color and style for texts in the program installed simple-colors [PYPI]( https://pypi.org/project/simple-colors/). To install simple colors in the terminal you have to type pip install simple-colors and press enter.
+
+## RESOURCES
+* w3schools - used to reference Python structure
+* Youtube - use it every day while coding to help understand different outlooks in coding.
