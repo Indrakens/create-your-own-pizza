@@ -1,6 +1,6 @@
 # PIZZA - TIME
 A Python command line program. This application is a Python-based program to let users use their imagination and create their own pizza.
-## [THE LIVE SITE]( https://pizzatime-35d0c564b83d.herokuapp.com/ )
+## [THE LIVE SITE]( https://pizzatime-89530163dbcf.herokuapp.com/ )
 ## [REPOSITORY]( https://github.com/Indrakens/pizza-time )
 # CONTENT TABLE
 * ### [FLOWCHART]( https://github.com/Indrakens/pizza-time#flowchart-1 )
