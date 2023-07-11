@@ -52,14 +52,13 @@ Used for version control.
 
 ## User Tests: 
 The following tests are on error handling true out the project.
-|                      TEST                                                                                | RESULT |
-|--------------|--------------|
-| The user enters the number or epty string in the name an error message appears                           |  PASS  |
-| The user enters an invalid letter or empty string in the menu option, an error message appears           |  PASS  |
-| The user enters invalid size or emty string in pizza size menu, an error message appears                 |  PASS  |
-| The user selecting O option first without creating pizza, an error message appears                       |  PASS  |
-| The user enters the pizza number to delete when pizza is not created, an error message appears           |  PASS  |
-| The user enters to delete pizza emty string or the pizza number what doesn't exist, error message appears|  PASS  |
+| Enter Your Name Field.
+|            TEST                           | RESULT |
+|---------|---------|
+| User eners the number                     |  PASS  |
+| User tried enter name with number         |  PASS  |
+| User enter an emty string                 |  PASS  |
+| User tried enter a name with space in it  |  PASS  |
 # PEP8 CI Python Linter
 ![9EAA5702-F173-4096-AE3F-E6737C43562B](https://github.com/Indrakens/pizza-time/assets/127971416/76e925d8-b06d-42dd-a33e-c82e29412f66)
 # DEPLOYMENT
