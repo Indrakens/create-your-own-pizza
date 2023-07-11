@@ -52,13 +52,27 @@ Used for version control.
 
 ## User Tests: 
 The following tests are on error handling true out the project.
-| Enter Your Name Field.
-|            TEST                           | RESULT |
+| Enter Your Name Field.                                     |
+|-----------|
+|            TEST                                   | RESULT |
 |---------|---------|
-| User eners the number                     |  PASS  |
-| User tried enter name with number         |  PASS  |
-| User enter an emty string                 |  PASS  |
-| User tried enter a name with space in it  |  PASS  |
+| The user enters the number                        |  PASS  |
+| The user tried to enter the name with a number    |  PASS  |
+| The user enters an empty string                   |  PASS  |
+| The user tried to enter a name with a space in it |  PASS  |
+| The user enters two or more names                 |  PASS  |
+The users can only enter one name to continue.
+| Choose one of the options in the Main Menu Field.                    |             
+|-------------|
+|            TEST                                             | RESULT |
+|----------|----------|
+| The user enters the full name of one of the options         |  PASS  |
+| The user enters the number                                  |  PASS  |
+| The user enters the option letter and number                |  PASS  |
+| The user enters an empty string                             |  PASS  |
+| The user enters more than one letter                        |  PASS  |
+| The user enters a letter what is not included in the options|  PASS  |
+The users can only enter the letter that shows in the main menu options.
 # PEP8 CI Python Linter
 ![9EAA5702-F173-4096-AE3F-E6737C43562B](https://github.com/Indrakens/pizza-time/assets/127971416/76e925d8-b06d-42dd-a33e-c82e29412f66)
 # DEPLOYMENT
