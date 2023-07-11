@@ -16,7 +16,7 @@ A Python command line program. This application is a Python-based program to let
 * ### [ACKNOWLEDGMENT]( https://github.com/Indrakens/pizza-time#acknowledgment-1 )
 ## FLOWCHART
 To better understand the initial design and concept of the program.
-![Pizza-Time](https://github.com/Indrakens/pizza-time/assets/127971416/070fb8d2-48c4-4ce9-838c-9ef056d3d1cf)
+![Pizza-Time (1)](https://github.com/Indrakens/pizza-time/assets/127971416/ac614b5a-9268-4f5e-b7e6-3f48e6899397)
 ## RUNNING PROGRAM
 * When users open the program they are presented with a welcome message and name input.
 ![IMG_0856](https://github.com/Indrakens/pizza-time/assets/127971416/e1204e0d-6be1-4ec1-9827-b63ff9648812)
@@ -149,7 +149,7 @@ To display an error message for pizza size. Removed [0].
             print(simple_colors.red("Please enter valid option!\n", 'italic'))
         else:
             break
-            
+
 '''
 
 * Fixed code entering topping or e to stop:
@@ -197,5 +197,5 @@ Deleting pizzas- when you enter number 1 it was deleting number 2. To fix this- 
 * w3schools - used to reference Python structure
 * Youtube - use it every day while coding to help understand different outlooks in coding.
 ## ACKNOWLEDGMENT 
-Graeme Taylor - my mentor who provided me with great feedback and guidance at the inception of this project.
-Alan Bushell - our teacher, always a great mentor during stand-up. And who helped insure me to get true this project.
+* Graeme Taylor - my mentor who provided me with great feedback and guidance at the inception of this project.
+* Alan Bushell - our teacher, always a great mentor during stand-up. And who helped insure me to get true this project.
