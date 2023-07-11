@@ -53,7 +53,7 @@ Used for version control.
 ## User Tests: 
 The following tests are on error handling true out the project.
 | Enter Your Name Field.                                     |
-|-----------|
+|-----------|-------|
 |            TEST                                   | RESULT |
 |---------|---------|
 | The user enters the number                        |  PASS  |
@@ -63,7 +63,7 @@ The following tests are on error handling true out the project.
 | The user enters two or more names                 |  PASS  |
 The users can only enter one name to continue.
 | Choose one of the options in the Main Menu Field.                    |             
-|-------------|
+|-------------|--------|
 |            TEST                                             | RESULT |
 |----------|----------|
 | The user enters the full name of one of the options         |  PASS  |
