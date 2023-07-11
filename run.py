@@ -74,7 +74,8 @@ def add_pizza(pizzas):
 
     print(cyan("TOPPING EXAMPLES...", ['italic', 'bright']))
     examples = ["-cheese", "-pepperoni", "-mushrooms", "-onion", "-sausage",
-                "-olives", "-peppers", "-pineapple", "-chicken", "-bacon", "-tomato", "-chilli"]
+                "-olives", "-peppers", "-pineapple", "-chicken",
+                "-bacon", "-tomato", "-chilli"]
     for example in examples:
         print(example, end="")
         print("\b\b", end="")

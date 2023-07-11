@@ -1,26 +1,27 @@
 # PIZZA - TIME
 A Python command line program. This application is a Python-based program to let users use their imagination and create their own pizza.
-## THE LIVE SITE
-## REPOSITORY
+## [THE LIVE SITE]( https://pizzatime-35d0c564b83d.herokuapp.com/ )
+## [REPOSITORY]( https://github.com/Indrakens/pizza-time )
 # CONTENT TABLE
+* ## [FLOWCHART]( https://github.com/Indrakens/pizza-time#flowchart )
 ## FLOWCHART
 To better understand the initial design and concept of the program.
 ![Pizza-Time](https://github.com/Indrakens/pizza-time/assets/127971416/070fb8d2-48c4-4ce9-838c-9ef056d3d1cf)
 ## RUNNING PROGRAM
-When users open the program they are presented with a welcome message and name input.
-![3D793E15-E72F-415D-A73A-248C57ECC67B](https://github.com/Indrakens/pizza-time/assets/127971416/7e2ab970-21e1-4697-8d64-d6f2fe534198)
-The user is presented with a welcome message and menu options.
-![74C75FC9-D950-4356-AF21-9E2B3AF3D12A](https://github.com/Indrakens/pizza-time/assets/127971416/c9b5c3b4-4bbb-4650-a0f8-b3484c7bc1ce)
-When selecting C the user is presented with pizza size option.
-![0ACDEEBB-0EA2-480C-AE3A-A25DE0807171](https://github.com/Indrakens/pizza-time/assets/127971416/eb882299-00aa-4721-a4b1-3c7816eaad7e)
-When selecting pizza size the user is presented with topping examples and has given option to type toppings or type e to stop a program.
-![2B1BC813-E273-441C-B58F-859BB15BDAD8](https://github.com/Indrakens/pizza-time/assets/127971416/5480c279-a92c-4fe5-a624-cb36e5c2b1d5)
-When selecting O the user is presented with message Your Created Pizza and below will be able to see user created pizza.
-![EADE79DC-8275-4C17-956A-E82CB7C8BE01](https://github.com/Indrakens/pizza-time/assets/127971416/d2790e98-92ed-445e-8d67-5d11ac07900e)
-When selecting D the user is presented with message to enter the pizza number user would like to delete.
-![6A6FE4A3-F8DA-49EE-B7A1-E847B999E85F](https://github.com/Indrakens/pizza-time/assets/127971416/bb1bbe02-255e-4e0d-a63d-0347d0193053)
-Selecting Q to end the program the user will be presented with thank you message.
-![0768D94B-88DA-4C28-8A5C-D4DFE8C48A3B](https://github.com/Indrakens/pizza-time/assets/127971416/f6d8742a-6b1b-45c8-9b19-5d93b06c3b4b)
+* When users open the program they are presented with a welcome message and name input.
+![IMG_0856](https://github.com/Indrakens/pizza-time/assets/127971416/e1204e0d-6be1-4ec1-9827-b63ff9648812)
+* After entering the name, the user is presented with a welcome message, with thr message "No pizza created yet!" and menu options.
+![IMG_0856](https://github.com/Indrakens/pizza-time/assets/127971416/9696107d-f8c1-4b8f-946b-a427e0fa4f5f)
+* When selecting C the user is presented with pizza size option.
+![IMG_0860](https://github.com/Indrakens/pizza-time/assets/127971416/58baa939-7977-41df-a5c0-837f5ffd78fa)
+* When selecting pizza size the user is presented with topping examples and has given option to type toppings or type e to stop a program.
+![IMG_0861](https://github.com/Indrakens/pizza-time/assets/127971416/2cc25ba8-90ec-4225-9bf5-450a013033fc)
+* When selecting O the user is presented with message Your Created Pizza and below will be able to see user created pizza.
+![IMG_0862](https://github.com/Indrakens/pizza-time/assets/127971416/b3c6bcae-b77a-462a-b9f9-ee9cceb4a576)
+* When selecting D the user is presented with message to enter the pizza number user would like to delete.
+![IMG_0863](https://github.com/Indrakens/pizza-time/assets/127971416/03c37353-21ff-4826-b4a3-dba9f461363c)
+* Selecting Q to end the program the user will be presented with thank you message.
+![IMG_0864](https://github.com/Indrakens/pizza-time/assets/127971416/91ff9f61-bc00-4cfb-b6ed-21693f61c87d)
 ## TEHNOLOGY USED
 ### Python
 Used to create the application.
@@ -94,7 +95,7 @@ Opening pizza in "Your Created Piza!" Field.
 | The user hasn't yet created any pizza |  PASS  |
 #### The user can see created pizza only if the pizza has been created.
 # PEP8 CI Python Linter
-![9EAA5702-F173-4096-AE3F-E6737C43562B](https://github.com/Indrakens/pizza-time/assets/127971416/76e925d8-b06d-42dd-a33e-c82e29412f66)
+![IMG_0854](https://github.com/Indrakens/pizza-time/assets/127971416/ec1ef63a-923b-49e9-8535-ef2adcae0d22)
 ## DEPLOYMENT
 * Navigate to heroku.com and log in.
 * Click "new" and create a new App.
@@ -120,7 +121,8 @@ Opening pizza in "Your Created Piza!" Field.
 ## BUGS
 To display an error message for pizza size. Removed [0].
 * Before fixing the issue the code was:
-'''ruby
+
+'''
 while True:
         size = input("(S) (M) (L): ")[
             0].upper()
@@ -129,9 +131,11 @@ while True:
         else:
             break
 '''
+
 Deleting pizzas- when you enter number 1 it was deleting number 2. To fix this- add to index_to_delete -1. 
 * Before fixing the issue the code was:
-'''ruby
+
+'''
  if (index_to_delete > 0 and index_to_delete <= len(pizzas)):
                 del pizzas[index_to_delete]
 '''                
