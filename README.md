@@ -91,6 +91,14 @@ Choose one of the options in the Pizza Size Field.
 | The user enters an empty string                             |  PASS  |
 | The user enters more than one letter                        |  PASS  |
 #### The users can only enter the letter that shows in the pizza size options.
+Enter topping or e in the - "Please type toppings or e to stop" Field.
+|      TEST                                 | RESULT |
+|--------|----------|
+| The user enters the number                |  PASS  |
+| The user enters an invalid topping        |  PASS  |
+| The user enters an empty string           |  PASS  |
+| The user enters an invalid letter to stop |  PASS  |
+#### The users can only enter the toppings provided in topping examples or enter (e) to stop.
 Deleting pizza in Enter pizza number to delete Field.
 |    TEST                          | RESULT |
 |--------|---------|
@@ -132,7 +140,7 @@ Opening pizza in "Your Created Piza!" Field.
 To display an error message for pizza size. Removed [0].
 * Before fixing the issue the code was:
 
-'''
+"'
 while True:
         size = input("(S) (M) (L): ")[
             0].upper()
@@ -140,15 +148,15 @@ while True:
             print(simple_colors.red("Please enter valid option!\n", 'italic'))
         else:
             break
-'''
+"'
 
 Deleting pizzas- when you enter number 1 it was deleting number 2. To fix this- add to index_to_delete -1. 
 * Before fixing the issue the code was:
 
-'''
+"'
  if (index_to_delete > 0 and index_to_delete <= len(pizzas)):
                 del pizzas[index_to_delete]
-'''                
+"'                
 
 ## RESOURCES
 * w3schools - used to reference Python structure
