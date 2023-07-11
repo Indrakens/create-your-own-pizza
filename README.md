@@ -3,7 +3,16 @@ A Python command line program. This application is a Python-based program to let
 ## [THE LIVE SITE]( https://pizzatime-35d0c564b83d.herokuapp.com/ )
 ## [REPOSITORY]( https://github.com/Indrakens/pizza-time )
 # CONTENT TABLE
-* ## [FLOWCHART]( https://github.com/Indrakens/pizza-time#flowchart )
+* ### [FLOWCHART]( https://github.com/Indrakens/pizza-time#flowchart )
+* ### [RUNNING PROGRAM]( https://github.com/Indrakens/pizza-time#running-program )
+* ### [TEHNOLOGY USED]( https://github.com/Indrakens/pizza-time#tehnology-used )
+* ### [TESTING]( https://github.com/Indrakens/pizza-time#testing )
+* ### [USER TESTS]( https://github.com/Indrakens/pizza-time#user-tests )
+* ### [PEP8]( https://github.com/Indrakens/pizza-time#pep8-ci-python-linter )
+* ### [DEPLOYMENT]( https://github.com/Indrakens/pizza-time#deployment )
+* ### [CREDITS]( https://github.com/Indrakens/pizza-time#credits )
+* ### [BUGS]( https://github.com/Indrakens/pizza-time#bugs )
+* ### [RESOURCES]( https://github.com/Indrakens/pizza-time#resources )
 ## FLOWCHART
 To better understand the initial design and concept of the program.
 ![Pizza-Time](https://github.com/Indrakens/pizza-time/assets/127971416/070fb8d2-48c4-4ce9-838c-9ef056d3d1cf)
@@ -11,7 +20,7 @@ To better understand the initial design and concept of the program.
 * When users open the program they are presented with a welcome message and name input.
 ![IMG_0856](https://github.com/Indrakens/pizza-time/assets/127971416/e1204e0d-6be1-4ec1-9827-b63ff9648812)
 * After entering the name, the user is presented with a welcome message, with thr message "No pizza created yet!" and menu options.
-![IMG_0856](https://github.com/Indrakens/pizza-time/assets/127971416/9696107d-f8c1-4b8f-946b-a427e0fa4f5f)
+![IMG_0867](https://github.com/Indrakens/pizza-time/assets/127971416/c661c6dd-3266-4906-b97e-5234fd3ddda5)
 * When selecting C the user is presented with pizza size option.
 ![IMG_0860](https://github.com/Indrakens/pizza-time/assets/127971416/58baa939-7977-41df-a5c0-837f5ffd78fa)
 * When selecting pizza size the user is presented with topping examples and has given option to type toppings or type e to stop a program.
@@ -94,7 +103,7 @@ Opening pizza in "Your Created Piza!" Field.
 |------|------|
 | The user hasn't yet created any pizza |  PASS  |
 #### The user can see created pizza only if the pizza has been created.
-# PEP8 CI Python Linter
+## PEP8 CI Python Linter
 ![IMG_0854](https://github.com/Indrakens/pizza-time/assets/127971416/ec1ef63a-923b-49e9-8535-ef2adcae0d22)
 ## DEPLOYMENT
 * Navigate to heroku.com and log in.
@@ -143,3 +152,6 @@ Deleting pizzas- when you enter number 1 it was deleting number 2. To fix this- 
 ## RESOURCES
 * w3schools - used to reference Python structure
 * Youtube - use it every day while coding to help understand different outlooks in coding.
+## ACKNOWLEDGMENT 
+Graeme Taylor - my mentor who provided me with great feedback and guidance at the inception of this project.
+Alan Bushell - our teacher, always a great mentor during stand-up. And who helped insure me to get true this project.
