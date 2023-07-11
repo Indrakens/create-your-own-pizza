@@ -139,8 +139,8 @@ Opening pizza in "Your Created Piza!" Field.
 ## BUGS
 To display an error message for pizza size. Removed [0].
 * Before fixing the issue the code was:
+'''
 
-"'
 while True:
         size = input("(S) (M) (L): ")[
             0].upper()
@@ -148,15 +148,44 @@ while True:
             print(simple_colors.red("Please enter valid option!\n", 'italic'))
         else:
             break
-"'
+'''
+
+* Fixed code entering topping or e to stop:
+   * Before:
+    '''
+
+    while True:
+        topping = input(yellow(
+            "Please type a toppings or (e) to stop: ", ['italic', 'bright']))
+
+        if topping == "e":
+            break
+    ''' 
+    * After:
+    '''
+
+     while True:
+        topping = input(yellow(
+            "Please type a toppings or (e) to stop: ", ['italic', 'bright']))
+
+        if topping.lower() not in ("cheese", "mushrooms", "pineapple",
+                                   "tomato", "chicken", "olives", "onion",
+                                   "chilli", "bacon", "peppers",
+                                   "sausage", "pepperoni", "e"):
+            print(red("Please enter valid option!", ['italic', 'bright']))
+            break
+        elif topping == "e":
+            break
+    '''  
+
 
 Deleting pizzas- when you enter number 1 it was deleting number 2. To fix this- add to index_to_delete -1. 
 * Before fixing the issue the code was:
+''' 
 
-"'
  if (index_to_delete > 0 and index_to_delete <= len(pizzas)):
                 del pizzas[index_to_delete]
-"'                
+'''               
 
 ## RESOURCES
 * w3schools - used to reference Python structure
