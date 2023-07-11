@@ -8,7 +8,7 @@ A Python command line program. This application is a Python-based program to let
 * ### [TEHNOLOGY USED]( https://github.com/Indrakens/pizza-time#tehnology-used-1 )
 * ### [TESTING]( https://github.com/Indrakens/pizza-time#testing-1 )
 * ### [USER TESTS]( https://github.com/Indrakens/pizza-time#user-tests-1 )
-* ### [PEP8]( https://github.com/Indrakens/pizza-time#pep8-ci-python-linter-1 )
+* ### [PEP8]( https://github.com/Indrakens/pizza-time#pep8-ci-python-linter )
 * ### [DEPLOYMENT]( https://github.com/Indrakens/pizza-time#deployment-1 )
 * ### [CREDITS]( https://github.com/Indrakens/pizza-time#credits-1 )
 * ### [BUGS]( https://github.com/Indrakens/pizza-time#bugs-1 )
