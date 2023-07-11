@@ -117,6 +117,24 @@ Opening pizza in "Your Created Piza!" Field.
 * Now you can click on the open App button to view our application.
 ## CREDITS
 * For having color and style for texts in the program installed simple-colors [PYPI]( https://pypi.org/project/simple-colors/). To install simple colors in the terminal you have to type pip install simple-colors and press enter.
+## BUGS
+To display an error message for pizza size. Removed [0].
+* Before fixing the issue the code was:
+'''ruby
+while True:
+        size = input("(S) (M) (L): ")[
+            0].upper()
+        if size.upper() not in ("S", "M", "L"):
+            print(simple_colors.red("Please enter valid option!\n", 'italic'))
+        else:
+            break
+'''
+Deleting pizzas- when you enter number 1 it was deleting number 2. To fix this- add to index_to_delete -1. 
+* Before fixing the issue the code was:
+'''ruby
+ if (index_to_delete > 0 and index_to_delete <= len(pizzas)):
+                del pizzas[index_to_delete]
+'''                
 
 ## RESOURCES
 * w3schools - used to reference Python structure
